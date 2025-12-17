@@ -1,0 +1,520 @@
+{
+  "ACMAT 2025-4": {
+    "deal_name": "ACMAT 2025-4",
+    "issuer": "America's Car-Mart",
+    "collateral_type": "Subprime Auto",
+    "total_size": 161.3,
+    "pricing_date": "2025-12-10",
+    "bookrunner": "Deutsche Bank",
+    "format": "144A",
+    "shelf": "ACM Auto Trust",
+    "series": "2025-4",
+    "closing_date": "",
+    "notes": "BHPH originator, 9th ABS issuance",
+    "source": "",
+    "tranches": [
+      {
+        "tranche_class": "A",
+        "size": 128.2,
+        "rating": "A",
+        "spread": 240,
+        "wal": 1.13,
+        "credit_enhancement": 57.1,
+        "coupon": 5.87,
+        "yield_val": 5.944
+      },
+      {
+        "tranche_class": "B",
+        "size": 33.1,
+        "rating": "BBB",
+        "spread": 600,
+        "wal": 3.14,
+        "credit_enhancement": 45.5,
+        "coupon": 8.42,
+        "yield_val": 9.575
+      }
+    ]
+  },
+  "DRIVE 2025-5": {
+    "deal_name": "DRIVE 2025-5",
+    "issuer": "Santander Drive",
+    "collateral_type": "Subprime Auto",
+    "total_size": 1250.0,
+    "pricing_date": "2025-12-08",
+    "bookrunner": "Santander",
+    "format": "144A",
+    "shelf": "Santander Drive Auto",
+    "series": "2025-5",
+    "closing_date": "",
+    "notes": "",
+    "source": "",
+    "tranches": [
+      {
+        "tranche_class": "A-1",
+        "size": 350.0,
+        "rating": "AAA",
+        "spread": 65,
+        "wal": 0.52,
+        "credit_enhancement": 52.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "A-2",
+        "size": 500.0,
+        "rating": "AAA",
+        "spread": 85,
+        "wal": 1.85,
+        "credit_enhancement": 52.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "B",
+        "size": 150.0,
+        "rating": "AA",
+        "spread": 125,
+        "wal": 2.5,
+        "credit_enhancement": 40.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "C",
+        "size": 100.0,
+        "rating": "A",
+        "spread": 175,
+        "wal": 3.2,
+        "credit_enhancement": 32.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "D",
+        "size": 75.0,
+        "rating": "BBB",
+        "spread": 300,
+        "wal": 3.8,
+        "credit_enhancement": 26.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "E",
+        "size": 75.0,
+        "rating": "BB",
+        "spread": 500,
+        "wal": 4.1,
+        "credit_enhancement": 20.0,
+        "coupon": null,
+        "yield_val": null
+      }
+    ]
+  },
+  "WLAKE 2025-4": {
+    "deal_name": "WLAKE 2025-4",
+    "issuer": "Westlake Financial",
+    "collateral_type": "Subprime Auto",
+    "total_size": 987.5,
+    "pricing_date": "2025-12-05",
+    "bookrunner": "J.P. Morgan",
+    "format": "144A",
+    "shelf": "Westlake Auto Receivables",
+    "series": "2025-4",
+    "closing_date": "",
+    "notes": "",
+    "source": "",
+    "tranches": [
+      {
+        "tranche_class": "A-1",
+        "size": 275.0,
+        "rating": "AAA",
+        "spread": 60,
+        "wal": 0.48,
+        "credit_enhancement": 54.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "A-2",
+        "size": 400.0,
+        "rating": "AAA",
+        "spread": 80,
+        "wal": 1.75,
+        "credit_enhancement": 54.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "B",
+        "size": 125.0,
+        "rating": "AA",
+        "spread": 115,
+        "wal": 2.4,
+        "credit_enhancement": 41.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "C",
+        "size": 87.5,
+        "rating": "A",
+        "spread": 165,
+        "wal": 3.1,
+        "credit_enhancement": 32.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "D",
+        "size": 62.5,
+        "rating": "BBB",
+        "spread": 275,
+        "wal": 3.7,
+        "credit_enhancement": 26.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "E",
+        "size": 37.5,
+        "rating": "BB",
+        "spread": 475,
+        "wal": 4.0,
+        "credit_enhancement": 22.0,
+        "coupon": null,
+        "yield_val": null
+      }
+    ]
+  },
+  "CARMX 2025-4": {
+    "deal_name": "CARMX 2025-4",
+    "issuer": "CarMax Auto",
+    "collateral_type": "Prime Auto",
+    "total_size": 1500.0,
+    "pricing_date": "2025-12-03",
+    "bookrunner": "BofA Securities",
+    "format": "144A",
+    "shelf": "CarMax Auto Owner Trust",
+    "series": "2025-4",
+    "closing_date": "",
+    "notes": "",
+    "source": "",
+    "tranches": [
+      {
+        "tranche_class": "A-1",
+        "size": 450.0,
+        "rating": "AAA",
+        "spread": 35,
+        "wal": 0.45,
+        "credit_enhancement": 8.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "A-2",
+        "size": 750.0,
+        "rating": "AAA",
+        "spread": 50,
+        "wal": 1.65,
+        "credit_enhancement": 8.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "A-3",
+        "size": 200.0,
+        "rating": "AAA",
+        "spread": 55,
+        "wal": 2.8,
+        "credit_enhancement": 8.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "B",
+        "size": 50.0,
+        "rating": "AA",
+        "spread": 85,
+        "wal": 3.2,
+        "credit_enhancement": 5.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "C",
+        "size": 50.0,
+        "rating": "A",
+        "spread": 110,
+        "wal": 3.5,
+        "credit_enhancement": 2.0,
+        "coupon": null,
+        "yield_val": null
+      }
+    ]
+  },
+  "DLLMT 2025-3": {
+    "deal_name": "DLLMT 2025-3",
+    "issuer": "De Lage Landen",
+    "collateral_type": "Equipment",
+    "total_size": 650.0,
+    "pricing_date": "2025-11-28",
+    "bookrunner": "Citi",
+    "format": "144A",
+    "shelf": "DLL Trust",
+    "series": "2025-3",
+    "closing_date": "",
+    "notes": "Agricultural and construction equipment",
+    "source": "",
+    "tranches": [
+      {
+        "tranche_class": "A-1",
+        "size": 200.0,
+        "rating": "AAA",
+        "spread": 45,
+        "wal": 0.55,
+        "credit_enhancement": 12.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "A-2",
+        "size": 350.0,
+        "rating": "AAA",
+        "spread": 60,
+        "wal": 2.1,
+        "credit_enhancement": 12.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "B",
+        "size": 60.0,
+        "rating": "AA",
+        "spread": 95,
+        "wal": 2.8,
+        "credit_enhancement": 7.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "C",
+        "size": 40.0,
+        "rating": "A",
+        "spread": 135,
+        "wal": 3.2,
+        "credit_enhancement": 3.0,
+        "coupon": null,
+        "yield_val": null
+      }
+    ]
+  },
+  "MFGLN 2025-2": {
+    "deal_name": "MFGLN 2025-2",
+    "issuer": "Marlette Funding",
+    "collateral_type": "Consumer",
+    "total_size": 425.0,
+    "pricing_date": "2025-11-25",
+    "bookrunner": "Goldman Sachs",
+    "format": "144A",
+    "shelf": "Marlette Funding Trust",
+    "series": "2025-2",
+    "closing_date": "",
+    "notes": "Personal loans originated via Best Egg",
+    "source": "",
+    "tranches": [
+      {
+        "tranche_class": "A",
+        "size": 300.0,
+        "rating": "AAA",
+        "spread": 95,
+        "wal": 0.85,
+        "credit_enhancement": 35.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "B",
+        "size": 60.0,
+        "rating": "A",
+        "spread": 185,
+        "wal": 1.2,
+        "credit_enhancement": 21.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "C",
+        "size": 40.0,
+        "rating": "BBB",
+        "spread": 350,
+        "wal": 1.45,
+        "credit_enhancement": 12.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "D",
+        "size": 25.0,
+        "rating": "BB",
+        "spread": 575,
+        "wal": 1.65,
+        "credit_enhancement": 6.0,
+        "coupon": null,
+        "yield_val": null
+      }
+    ]
+  },
+  "OAKCL 2025-4": {
+    "deal_name": "OAKCL 2025-4",
+    "issuer": "Oak Hill Advisors",
+    "collateral_type": "CLO",
+    "total_size": 500.0,
+    "pricing_date": "2025-12-01",
+    "bookrunner": "Morgan Stanley",
+    "format": "144A",
+    "shelf": "Oak Hill CLO",
+    "series": "2025-4",
+    "closing_date": "",
+    "notes": "4-year reinvestment period",
+    "source": "",
+    "tranches": [
+      {
+        "tranche_class": "A",
+        "size": 310.0,
+        "rating": "AAA",
+        "spread": 135,
+        "wal": 5.2,
+        "credit_enhancement": 38.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "B",
+        "size": 50.0,
+        "rating": "AA",
+        "spread": 185,
+        "wal": 6.1,
+        "credit_enhancement": 28.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "C",
+        "size": 35.0,
+        "rating": "A",
+        "spread": 245,
+        "wal": 6.8,
+        "credit_enhancement": 21.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "D",
+        "size": 30.0,
+        "rating": "BBB",
+        "spread": 380,
+        "wal": 7.2,
+        "credit_enhancement": 15.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "E",
+        "size": 25.0,
+        "rating": "BB",
+        "spread": 650,
+        "wal": 7.5,
+        "credit_enhancement": 10.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "Equity",
+        "size": 50.0,
+        "rating": "NR",
+        "spread": 0,
+        "wal": 8.0,
+        "credit_enhancement": 0.0,
+        "coupon": null,
+        "yield_val": null
+      }
+    ]
+  },
+  "AMCAR 2025-3": {
+    "deal_name": "AMCAR 2025-3",
+    "issuer": "AmeriCredit",
+    "collateral_type": "Subprime Auto",
+    "total_size": 1100.0,
+    "pricing_date": "2025-11-20",
+    "bookrunner": "Barclays",
+    "format": "144A",
+    "shelf": "AmeriCredit Automobile Receivables",
+    "series": "2025-3",
+    "closing_date": "",
+    "notes": "",
+    "source": "",
+    "tranches": [
+      {
+        "tranche_class": "A-1",
+        "size": 300.0,
+        "rating": "AAA",
+        "spread": 55,
+        "wal": 0.5,
+        "credit_enhancement": 50.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "A-2",
+        "size": 450.0,
+        "rating": "AAA",
+        "spread": 75,
+        "wal": 1.7,
+        "credit_enhancement": 50.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "B",
+        "size": 130.0,
+        "rating": "AA",
+        "spread": 110,
+        "wal": 2.35,
+        "credit_enhancement": 38.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "C",
+        "size": 95.0,
+        "rating": "A",
+        "spread": 155,
+        "wal": 3.0,
+        "credit_enhancement": 30.0,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "D",
+        "size": 70.0,
+        "rating": "BBB",
+        "spread": 260,
+        "wal": 3.55,
+        "credit_enhancement": 23.5,
+        "coupon": null,
+        "yield_val": null
+      },
+      {
+        "tranche_class": "E",
+        "size": 55.0,
+        "rating": "BB",
+        "spread": 450,
+        "wal": 3.9,
+        "credit_enhancement": 18.5,
+        "coupon": null,
+        "yield_val": null
+      }
+    ]
+  }
+}

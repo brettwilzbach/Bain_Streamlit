@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(node --version:*)",
+      "Bash(npm --version:*)",
+      "Bash(npx create-next-app:*)",
+      "Bash(npx shadcn@latest init --defaults --yes)",
+      "Bash(cat:*)",
+      "Bash(npx shadcn@latest add:*)"
+    ]
+  }
+}

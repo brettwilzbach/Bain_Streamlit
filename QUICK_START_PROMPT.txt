@@ -1,0 +1,69 @@
+MIGRATE STREAMLIT TO NEXT.JS + SHADCN/UI - QUICK START
+
+CURRENT STATE:
+- Streamlit app: bain_abf_portal/ (5 pages: Home, Waterfall, Spreads, Market, Analyzer)
+- React project: abf-portal-react/ (ONLY default template - NO work done)
+- Backend: Python models in bain_abf_portal/models/ (KEEP THESE)
+
+YOUR TASK:
+Migrate Streamlit app to Next.js 16 + shadcn/ui + TypeScript, keeping Python backend as FastAPI.
+
+ARCHITECTURE:
+- Frontend: Next.js + shadcn/ui + TypeScript
+- Backend: FastAPI (Python) - expose existing models via REST API
+- Communication: REST API between Next.js and FastAPI
+
+STEP 1: SETUP (Do This First)
+1. cd abf-portal-react
+2. npx shadcn@latest init
+3. Install components: button, card, table, tabs, sidebar, dialog, select, input, textarea, accordion, badge, alert
+4. npm install recharts axios @tanstack/react-query date-fns
+5. Create folder structure: components/layout/, components/waterfall/, components/spreads/, components/market/, lib/, types/, hooks/
+
+STEP 2: BACKEND API (Critical - Do Before Frontend)
+1. Create abf-portal-backend/ directory
+2. Create FastAPI app (main.py) with routes:
+   - GET /api/market/spreads
+   - GET /api/market/sofr
+   - POST /api/waterfall/calculate
+   - GET /api/deals
+   - GET /api/deals/templates
+3. Import and expose Python models from bain_abf_portal/models/
+4. Add CORS middleware for localhost:3000
+5. Test with: uvicorn main:app --reload --port 8000
+
+STEP 3: FRONTEND - MIGRATE PAGES (One at a Time)
+Priority order:
+1. Home page (easiest - static content)
+2. Market Tracker (table, filters, charts)
+3. Spread Monitor (real-time data, charts)
+4. Deal Analyzer (educational content)
+5. Waterfall Modeler (most complex - do last)
+
+For each page:
+- Create page.tsx in appropriate route
+- Create reusable components in components/
+- Use React Query for data fetching
+- Use Recharts for visualizations
+- Match Streamlit styling and UX
+
+KEY FILES TO CREATE:
+- src/components/layout/Sidebar.tsx (navigation)
+- src/lib/api.ts (API client)
+- src/app/layout.tsx (root layout with sidebar)
+- src/app/page.tsx (home)
+- src/app/market/page.tsx
+- src/app/spreads/page.tsx
+- src/app/waterfall/page.tsx
+- src/app/analyzer/page.tsx
+
+IMPORTANT:
+- Don't rewrite Python logic - keep in FastAPI
+- Start simple (Home page first)
+- Test as you go
+- Use TypeScript properly
+- Match Streamlit UX
+- Make REAL progress - create actual working components
+
+See MIGRATION_PROMPT.md for full detailed instructions.
+
