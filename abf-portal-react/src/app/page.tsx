@@ -1,64 +1,99 @@
-import Image from "next/image";
+"use client";
+
+import { useState } from "react";
+import { BarChart3, TrendingUp, Zap, BookOpen, Menu, X } from "lucide-react";
+import Dashboard from "@/components/Dashboard";
+import DealAnalyzer from "@/components/DealAnalyzer";
+import WaterfallModeler from "@/components/WaterfallModeler";
+import SpreadMonitor from "@/components/SpreadMonitor";
+import MarketTracker from "@/components/MarketTracker";
 
 export default function Home() {
+  const [activeModule, setActiveModule] = useState("dashboard");
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+
+  const modules = [
+    { id: "dashboard", label: "Dashboard", icon: BarChart3, color: "text-blue-600" },
+    { id: "analyzer", label: "Deal Analyzer", icon: BookOpen, color: "text-blue-600" },
+    { id: "waterfall", label: "Waterfall Modeler", icon: Zap, color: "text-cyan-600" },
+    { id: "spread", label: "Spread Monitor", icon: TrendingUp, color: "text-emerald-600" },
+    { id: "market", label: "Market Tracker", icon: BarChart3, color: "text-amber-600" },
+  ];
+
+  const renderModule = () => {
+    switch (activeModule) {
+      case "analyzer":
+        return <DealAnalyzer />;
+      case "waterfall":
+        return <WaterfallModeler />;
+      case "spread":
+        return <SpreadMonitor />;
+      case "market":
+        return <MarketTracker />;
+      default:
+        return <Dashboard />;
+    }
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div className="flex h-screen bg-background overflow-hidden">
+      <aside
+        className={`${
+          sidebarOpen ? "w-64" : "w-20"
+        } transition-all duration-300 ease-in-out bg-sidebar border-r border-sidebar-border flex flex-col`}
+      >
+        <div className="p-4 border-b border-sidebar-border">
+          <div className="flex items-center justify-between">
+            {sidebarOpen && (
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center">
+                  <BarChart3 className="w-5 h-5 text-white" />
+                </div>
+                <h1 className="font-bold text-sm text-sidebar-foreground whitespace-nowrap">ABF Portal</h1>
+              </div>
+            )}
+            <button
+              onClick={() => setSidebarOpen(!sidebarOpen)}
+              className="p-1.5 hover:bg-sidebar-accent/20 rounded-lg transition-colors text-sidebar-foreground"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+        <nav className="flex-1 overflow-y-auto p-3 space-y-1">
+          {modules.map((module) => {
+            const Icon = module.icon;
+            const isActive = activeModule === module.id;
+            return (
+              <button
+                key={module.id}
+                onClick={() => setActiveModule(module.id)}
+                className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 ${
+                  isActive
+                    ? "bg-sidebar-primary text-white shadow-lg shadow-sidebar-primary/30"
+                    : "text-sidebar-foreground hover:bg-sidebar-accent/20"
+                } ${!sidebarOpen && "justify-center"}`}
+              >
+                <Icon size={20} className={isActive ? "text-white" : module.color} />
+                {sidebarOpen && (
+                  <span className="text-sm font-medium whitespace-nowrap">{module.label}</span>
+                )}
+              </button>
+            );
+          })}
+        </nav>
+
+        {sidebarOpen && (
+          <div className="p-4 border-t border-sidebar-border text-xs text-sidebar-foreground/60">
+            <p>Built for Bain Capital Credit</p>
+            <p className="mt-1">ABF/Structured Credit</p>
+          </div>
+        )}
+      </aside>
+
+      <main className="flex-1 overflow-auto">
+        {renderModule()}
       </main>
     </div>
   );
